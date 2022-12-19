@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API - STAR WARS </title>
+</head>
+<body>
+    <script>
+        // fetch precisa de um endereço url
+        console.log('Api star wars')
+        fetch('https://swapi.dev/api/people/5/')
+        // .then possibilita que craiamos uma função para acessar a API
+        // preciso criar o then função para acessar a promiss
+        .then(function(response){
+            return response.json()
+        })
+            .then(function(data){
+                console.log(data)
+            })
+
+    </script>
+</body>
+</html>

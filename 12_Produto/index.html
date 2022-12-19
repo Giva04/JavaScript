@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- cabeçalho do arquivo -->
+    <header> 
+        <img src="logo_dark_DNC.png" width="100">
+        <h1>Controle de Produtos</h1>
+    </header>
+    <!-- conteudo de acesso e auterações -->
+    <main>
+        <h2> Produtos </h2>
+        <spam> Lista de Produtos </spam>
+        <div class="card">
+            <div class="inputpd">
+                <label> Nome do Produto</label>
+                <input type="text" id="pdnome" placeholder="Escreva o Produto">
+            </div>
+            <div class="inputpd">
+                <label> Valor do Produto </label>
+                <input type="text" id="pdvalor" placeholder="R$00.00">
+            </div>
+                <button onclick="produto.Adicionar()">Adicionar</button>
+                <button onclick="produto.Cancelar()">Cancelar</button>
+        </div>
+        <!-- conteudo que sera cadastrado -->
+        <div class ="conteudo">
+            <!-- table para Criar tabela de produto -->
+            <table border ="1">
+                <!-- thead cria o linha superior com id ,produto, etc -->
+                <thead>
+                    <!-- para criar coluna na linha superior usamos a tag TH -->
+                        <th>ID</th>
+                        <th>Produto</th>
+                        <th>Valor</th>
+                        <th>Remover</th>
+                </thead>
+                <!-- tbady cria a linha com descriação do produto,nome , valor -->
+                <tbody id="tbody">
+                    <!-- para criar coluna na linha inferior usamos a tag TD -->
+                  
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>

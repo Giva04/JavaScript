@@ -1,0 +1,40 @@
+body{ /*estilização do corpo*/
+    background-color: rgb(48,48,48); 
+    /* preto DNC */
+    
+    /*branco DNC*/
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+header{ /* organizando as colunas */
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 33vw;
+    color:rgb(239,235,228);
+}
+section{ /*estilizando as div*/
+    background-color: rgb(226, 225, 223);
+    color: black;
+    padding:10px; /* distancias da divs*/
+    border-radius:10px; /*arredondar as bordas*/
+    width:50%;
+    margin: auto;
+}
+#botao{ /*(#id) estilizando botão calcular*/
+    background-color: rgb(12,112, 242); /*azul DNC*/
+    color: rgb(239,235, 228);
+    border:none;
+    width:150px;
+    height: 30px;
+    margin: auto;
+    border-radius: 20px;
+}
+.form{/*(.class) estilizando os inputs*/
+    margin: 10px;
+    border-radius: 10px;
+    border:0px;
+    height:30px;
+    width: 250px;
+
+}
+
